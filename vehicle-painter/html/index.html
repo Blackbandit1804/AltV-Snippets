@@ -1,0 +1,134 @@
+<html>
+<head>
+
+	<style type="text/css">
+	
+	div, input, select { border-radius: 20px; }
+	
+	#menu
+	{
+		margin-top: 30px;
+		margin-left: 30px;
+		padding-top: 10px;
+		background: #444444;
+		width: 250px;
+		height: 550px;		
+	}
+		
+	#primaryprimer
+	{
+		width: 200px;
+	}
+		
+	#secondaryprimer
+	{
+		width: 200px;
+	}
+	
+	#colorslider
+	{
+		margin-top: 10px;
+		margin-left: 10px;
+		width: 230px;
+		height: 270px;
+		background: #aaaaaa;
+		text-align: center;
+	}
+	
+	#preview_primary, #preview_secondary
+	{
+		width: 115px;
+		height: 30px;
+		background: #000000;
+	}
+	
+	#preview_primary
+	{	
+		margin-top: 20px;
+		margin-left: 10px;
+		border-radius: 20px 0px 0px 20px;
+	}
+	
+	#preview_secondary
+	{	
+		margin-top: -30px;
+		margin-left: 125px;
+		border-radius: 0px 20px 20px 0px;
+	}
+	
+	#feedback
+	{
+		padding-top: 10px;
+		margin-top: 20px;
+		margin-left: 10px;
+		width: 230px;
+		height: 50px;
+		background: #cccccc;
+		text-align: center;
+		vertical-align: center;
+	}
+	
+	#close
+	{
+	}
+	
+	#apply, #exit
+	{
+		margin-top: 20px;
+		margin-left: 10px;
+		width: 230px;
+		height: 40px;
+		background: #aaaaaa;
+	}
+	
+	</style>
+	
+	<script src="app.js"></script>
+
+</head>
+
+<body>
+	<div id="menu">
+	
+		<div id="colorslider">
+		
+			<br>
+			<select id="primary_primer">
+				<option value="Metallic">Metallic</option>
+				<option value="Matt">Matt</option>
+				<option value="Util">Util</option>
+				<option value="Worn">Worn</option>
+				<option value="Brushed">Brushed</option>
+				<option value="Chrome">Chrome</option>
+			</select>
+			<br>		
+			0 <input id="primary_r" type="range" min="0" max="255" value="0" step="1"> 255<br>
+			0 <input id="primary_g" type="range" min="0" max="255" value="0" step="1"> 255<br>
+			0 <input id="primary_b" type="range" min="0" max="255" value="0" step="1"> 255<br>
+			<br>
+			<select id="secondary_primer">
+				<option value="Metallic">Metallic</option>
+				<option value="Matt">Matt</option>
+				<option value="Util">Util</option>
+				<option value="Worn">Worn</option>
+				<option value="Brushed">Brushed</option>
+				<option value="Chrome">Chrome</option>
+			</select>
+			<br>			
+			0 <input id="secondary_r" type="range" min="0" max="255" value="0" step="1"> 255<br>
+			0 <input id="secondary_g" type="range" min="0" max="255" value="0" step="1"> 255<br>
+			0 <input id="secondary_b" type="range" min="0" max="255" value="0" step="1"> 255<br>
+		</div>
+		
+		<div id="preview_primary"></div><div id="preview_secondary"></div>
+	
+		<div id="feedback"></div>
+		
+		<div id="navi">
+			<input id="apply" type="button" value="APPLY"></input>
+			<input id="exit" type="button" value="EXIT"></input>
+		</div>
+			
+	</div>
+
+</body>
