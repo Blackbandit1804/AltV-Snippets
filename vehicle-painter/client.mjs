@@ -33,7 +33,5 @@ function closeWebview() {
 }
 
 function colorCar(args) {
-
-	alt.emitServer('server:CarColor', args);
-	
+	alt.emitServer('server:CarColor', args);	
 }
