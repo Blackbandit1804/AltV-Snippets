@@ -1,7 +1,7 @@
 import * as alt from 'alt';
 import * as chat from 'chat';
 
-chat.registerCmd('pc', (player,arg) => {
+chat.registerCmd('paint', (player,arg) => {
 	alt.emitClient(player, 'webview:Load');
 });
 
